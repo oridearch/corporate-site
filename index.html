@@ -13,10 +13,6 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
@@ -28,20 +24,50 @@
   <link rel="icon" type="image/png" href="images/favicon.png">
 
 </head>
-<body>
 
+
+<body>
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
-    <div class="row">
-      <div class="one-half column" style="margin-top: 25%">
-        <h4>Basic Page</h4>
-        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
-      </div>
-    </div>
-  </div>
+  <header>
+    <div id="header_in" class="container">
+      <div class="row">
+        <div class="six columns logo">
 
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+          <img class="u-max-full-width" src="images/top/logo.png" alt="株式会社サンプル" srcset="images/top/logo@2x.png 2x">
+
+        </div>
+        <div class="six columns navi">
+
+          <!-- SP表示のときのみ利用する部分、後でコントロールしやすいようにdivタグで囲-->
+          <div class="sp_navi">
+            <img id="sp_navi_btn" class="u-max-full-width" src="images/top/sp_navi.png" alt="sp_navi" srcset="images/top/sp_navi@2x.png 2x">
+
+            <!-- SP表示のときにタップしたら表示されるtoggleメニューのリスト-->
+            <ul class="sp_navi_li">
+              <li><a href="index.html">TOPページ</a></li>
+              <li><a href="news.html">ニュースリリース</a></li>
+              <li><a href="company.html">会社概要</a></li>
+            </ul>
+          </div>
+          <!-- sp_navi-->
+
+          <!-- PC表示のときのメニュー -->
+          <div class="pc_navi">
+
+            <ul class="pc_navi_li">
+              <li><a href="index.html">TOPページ</a></li>
+              <li><a href="news.html">ニュースリリース</a></li>
+              <li><a href="company.html">会社概要</a></li>
+            </ul>
+          </div>
+          <!-- pc_navi -->
+        </div>
+      </div>
+      <!-- row -->
+    </div>
+    <!-- header_in -->
+  </header>
 </body>
+
 </html>

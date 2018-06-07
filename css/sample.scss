@@ -17,3 +17,66 @@ $blue1: #42b9d0;
 $blue2: #339fd1;
 $gray_blue: #eaf2f4;
 
+header
+{
+
+	background: $gray_blue;
+
+	#header_in {
+		padding-top: 10px;
+		padding-bottom: 4px;
+	}
+
+	// メディアクエリ：ブレイクポイント550px
+	// SP表示のとき、2カラム表示になるように調整
+	//
+	@media(max-width: 550px) {
+		.logo { width: 190px; }
+
+		.navi {
+			width: 40px;
+			float: right;
+		}
+	} // @media end
+
+	.sp_navi_li {
+		width: 180px;
+		position: absolute;
+		top: 50px;
+		right: 2%;
+		border: 1px solid #eee;
+		background: white;
+		margin: 0;
+		padding: 0;
+		display: none; //タップされるまではメニュー内容は非表示
+
+		li {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+
+			a {
+				display: block;
+				padding: 10px 8px;
+				border-bottom: 1px solid #eee;
+				font-size: 14px;
+				text-decoration: none;
+			} //a end
+		} //li end
+	} //.sp_navi_li end
+
+	// PCビューではsp_naviクラスは非表示にする
+	@media(min-width: 551px) {
+		.sp_navi {
+			display: none;
+		}
+	} //min-width: 551px end
+
+	// PCビューではさらにPC用メニューは非表示にする
+	@media(max-width: 550px) {
+		.pc_navi {
+			display: none;
+		}
+	} //max-width: 550px end
+
+} //header end
