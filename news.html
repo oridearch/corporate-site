@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>株式会社サンプル</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/sample.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+
+
+<body>
+<!-- 本文：メインコンテンツ -->
+
+  <!-- Facebookページブラグイン STEP1 -->
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v3.0';
+    fjs.parentNode.insertBefore(js, fjs);
+  }
+  (document, 'script', 'facebook-jssdk'));
+  </script>
+
+  <header>
+    <!-- headerはindex.htmlと共用可能 -->
+    <div id="header_in" class="container">
+      <div class="row">
+        <div class="six columns logo">
+
+          <!-- ヘッダーのロゴ:HOMEにジャンプ＋h1タグ-->
+          <h1>
+            <a href="index.html">
+              <img class="u-max-full-width" src="images/top/logo.png" alt="株式会社サンプル" srcset="images/top/logo@2x.png 2x">
+            </a>
+          </h1>
+        </div>
+        <div class="six columns navi">
+
+          <!-- SP表示のときのみ利用する部分、後でコントロールしやすいようにdivタグで囲む-->
+          <div class="sp_navi">
+            <img id="sp_navi_btn" class="u-max-full-width" src="images/top/sp_navi.png" alt="sp_navi" srcset="images/top/sp_navi@2x.png 2x">
+
+            <!-- SP表示のときにタップしたら表示されるtoggleメニューのリスト-->
+            <ul class="sp_navi_li">
+              <li><a href="index.html">TOPページ</a></li>
+              <li><a href="news.html">ニュースリリース</a></li>
+              <li><a href="company.html">会社概要</a></li>
+            </ul>
+          </div>
+          <!-- sp_navi-->
+
+          <!-- PC表示のときのメニュー -->
+          <div class="pc_navi">
+
+            <ul class="pc_navi_li">
+              <li class="navi_toppage"><a href="index.html">TOPページ</a></li>
+              <li class="navi_news"><a href="news.html">ニュースリリース</a></li>
+              <li class="navi_company"><a href="company.html">会社概要</a></li>
+            </ul>
+
+          </div>
+          <!-- pc_navi::close-->
+        </div>
+      </div>
+      <!-- row::close -->
+    </div>
+    <!-- header_in::close -->
+  </header>
+
+  <!-- news.html メインコンテンツ-->
+  <!-- #sub_cover::open -->
+  <div id="sub_cover">
+    <div class="container">
+      <div class="row">
+        <!-- 横幅いっぱいのグリッド-->
+        <div class="twelve columns">
+          <h2>NEWS</h2>
+        </div>
+        <!-- .twelve .columns::close-->
+      </div>
+      <!-- .row::close-->
+    </div>
+    <!--.container::close-->
+  </div>
+  <!-- sub_cover::close -->
+
+  <!-- #contents::open-->
+  <div id="contents">
+    <div class="container">
+      <div class="row">
+        <!-- #main .nine .columns::open  9/12グリッド-->
+        <div id="main" class="nine columns">
+          <h2>ニュースリリース</h2>
+          <!-- unorderedList->.news_li::open -->
+          <ul class="news_li">
+            <li><span>0000-00-00</span>ここにニューステキストが入ります。ここにニューステキストが入ります。</li>　<!-- 1-->
+            <li><span>0000-00-00</span>ここにニューステキストが入ります。ここにニューステキストが入ります。</li>　<!-- 2-->
+            <li><span>0000-00-00</span>ここにニューステキストが入ります。ここにニューステキストが入ります。</li>　<!-- 3-->
+            <li><span>0000-00-00</span>ここにニューステキストが入ります。ここにニューステキストが入ります。</li>　<!-- 4-->
+            <li><span>0000-00-00</span>ここにニューステキストが入ります。ここにニューステキストが入ります。</li>　<!-- 5-->
+            <li><span>0000-00-00</span>ここにニューステキストが入ります。ここにニューステキストが入ります。</li>　<!-- 6-->
+            <li><span>0000-00-00</span>ここにニューステキストが入ります。ここにニューステキストが入ります。</li>　<!-- 7-->
+            <li><span>0000-00-00</span>ここにニューステキストが入ります。ここにニューステキストが入ります。</li>　<!-- 8-->
+            <li><span>0000-00-00</span>ここにニューステキストが入ります。ここにニューステキストが入ります。</li>　<!-- 9-->
+            <li><span>0000-00-00</span>ここにニューステキストが入ります。ここにニューステキストが入ります。</li>　<!--10-->
+          </ul>
+          <!-- ul(.news_li)::close -->
+        </div>
+        <!-- #main .nine .columns::close -->
+
+        <!-- サイドバーメニュー -->
+        <!-- #sidebar .three .columns::open 3/12グリッド-->
+        <div id="sidebar" class="three columns">
+          <!--　.pc_sidemenu::open -->
+          <div class="pc_sidemenu">
+            <h3>Contents</h3>
+            <ul>
+              <li><a href="index.html">TOPページ</a></li>
+              <li><a href="news.html">ニュースリリース</a></li>
+              <li><a href="company.html">会社概要</a></li>
+            </ul>
+          </div>
+          <!-- .pc_sidemenu::close -->
+
+          <!-- Facebookページブラグイン appear-->
+          <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
+            <blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore">
+              <a href="https://www.facebook.com/facebook">Facebook</a>
+              </blockquote>
+          </div>
+          <!-- Facebooke埋込div::close-->
+
+        </div>
+        <!-- #sidebar .three .columns::close 3/12グリッド〆-->
+      </div>
+      <!-- .row::close -->
+    </div>
+    <!-- .container::close -->
+
+  </div>
+  <!-- #contents::close -->
+
+  <!-- footer::open -->
+  <footer>
+    <!-- footer：index.htmlと共用 -->
+    <div class="container">
+      <div class="row">
+        <div class="four columns sp">
+          <img class="u-max-full-width" src="images/top/footer_logo.png" alt="株式会社サンプル" srcset="images/top/footer_logo@2x.png 2x">
+        </div>
+        <!-- columns -->
+        <div class="four columns foot_address sp">
+          〒000-0000<br>
+          東京都〇〇区〇〇町 560-0-0<br>
+          03-0000-0000<br>
+          info@xxxxxx.com
+        </div>
+        <!-- columns -->
+        <div class="four columns">
+          <ul class="foot_navi">
+            <li><a href="index.html">TOPページ</a></li>
+            <li><a href="news.html">ニュースリリース</a></li>
+            <li><a href="company.html">会社概要</a></li>
+          </ul>
+        </div>
+        <!-- columns::close -->
+      </div>
+      <!-- row::close -->
+
+      <div class="row">
+        <!-- columns -->
+        <div class="twelve columns sp">
+          <p class="copy">copyright (C) SampleCompany all rights reserved.</p>
+        </div>
+        <!-- columns::close -->
+      </div>
+      <!-- row::close -->
+
+    </div>
+  </footer>
+  <!-- footer::close-->
+
+  <!-- jQueryライブラリの読み込み-->
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+  <!-- Toggleアニメーションの追加 -->
+  <script>
+
+    $(function() {
+      $(document).ready(function() {
+
+        $("#sp_navi_btn").click(function() {
+          $(this).next().slideToggle();
+        }); // .click close
+
+      }); // .ready close
+    }); // function close
+
+  </script>
+
+</body>
+
+</html>
