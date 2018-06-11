@@ -132,7 +132,7 @@ header .sp_navi_li li a {
     background-image: url("../images/top/cover@2x.jpg");
   }
 }
-@media (min_width: 551px) {
+@media (min-width: 551px) {
   #cover_area {
     text-align: left;
     height: 420px;
@@ -360,8 +360,10 @@ h1 {
     padding-bottom: 70px;
   }
 }
-#contents #main {
-  padding-right: 20px;
+@media (min-width: 551px) {
+  #contents #main {
+    padding-right: 20px;
+  }
 }
 #contents #main h2 {
   color: #42b9d0;
@@ -378,7 +380,7 @@ h1 {
     padding-bottom: 20px;
   }
 }
-#contents #main h2 .company_title {
+#contents #main h2.company_title {
   margin-bottom: 0px;
 }
 #contents #main .news_li {
@@ -412,6 +414,9 @@ h1 {
   color: #626262;
   font-size: 14px;
   font-size: 1.4rem;
+}
+#contents #main th {
+  padding-right: 20px;
 }
 #contents #sidebar {
   padding-bottom: 20px;
